@@ -12,9 +12,7 @@ export default {
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <template v-for="n in 3"> <span class="icon-bar"></span> </template>
             </button>
             <router-link :to="{ name: 'home' }" class="navbar-brand">SB Admin v2.0</router-link>
         </div>
