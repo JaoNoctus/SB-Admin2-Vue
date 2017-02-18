@@ -1,9 +1,10 @@
 <script>
 import Navbar from './components/layout/navbar'
+import Sidebar from './components/layout/sidebar'
 
 export default {
   name: 'app',
-  components: { Navbar }
+  components: { Navbar, Sidebar }
 }
 </script>
 
@@ -11,6 +12,7 @@ export default {
     <div id="app">
         <div id="wrapper">
             <navbar/>
+            <sidebar/>
         </div>
         <router-view/>
     </div>
